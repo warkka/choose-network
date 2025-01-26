@@ -18,7 +18,7 @@ export const NetworkItem = ({ name, imageUrl, fee, time, rounded = false, onClic
         <div className="self-stretch flex flex-col items-stretch text-[rgba(28,28,28,1)] font-medium justify-center flex-1 shrink basis-[0%] my-auto">
           <div className="self-stretch w-full gap-1">{name}</div>
         </div>
-        <div className="self-stretch flex flex-col font-normal text-right justify-center">
+        <div className="self-stretch flex flex-col font-normal text-right justify-center leading-none">
           <div className="text-[rgba(28,28,28,1)]">{fee}</div>
           <div className="text-[rgba(143,143,143,1)]">{time}</div>
         </div>
