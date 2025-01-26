@@ -42,9 +42,9 @@ const networks = [
 export const SendContainer = ({ onClose }: SendContainerProps) => {
   return (
     <div className="bg-[rgba(245,245,247,1)] flex max-w-[393px] flex-col overflow-hidden items-center pt-5 pb-9 rounded-[24px_24px_0px_0px]">
-      <div className="flex w-full max-w-[353px] items-center gap-[40px_100px] text-xl text-[rgba(28,28,28,1)] font-semibold whitespace-nowrap justify-between">
-        <div className="self-stretch flex w-8 shrink-0 h-8 my-auto" onClick={onClose} />
-        <div className="self-stretch my-auto">Send</div>
+      <div className="flex w-full max-w-[353px] items-center text-xl text-[rgba(28,28,28,1)] font-semibold relative">
+        <div className="absolute left-0 w-8 h-8 cursor-pointer" onClick={onClose} />
+        <div className="w-full text-center">Send</div>
       </div>
       
       <AddressInput />
